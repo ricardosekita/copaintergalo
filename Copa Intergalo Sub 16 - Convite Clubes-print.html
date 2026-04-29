@@ -941,5 +941,12 @@
 <script type="text/babel" src="tweaks-panel.jsx"></script>
 <script type="text/babel" src="tweaks-app.jsx"></script>
 
+<script>
+(async () => {
+  try { await customElements.whenDefined('deck-stage'); } catch (e) {}
+  try { await document.fonts.ready; } catch (e) {}
+  setTimeout(() => { try { window.print(); } catch (e) {} }, 500);
+})();
+</script>
 </body>
 </html>

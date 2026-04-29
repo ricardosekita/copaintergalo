@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<title>Copa Intergalo Sub 16 — 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  :root{
+    --gold-1:#FFF1BF;
+    --gold-2:#D4AF37;
+    --gold-3:#8E6B1E;
+    --gold-4:#6B4F12;
+    --bg-1:#0a0a0a;
+    --bg-2:#1a1410;
+    --ink:#f5e9c8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background:
+      radial-gradient(1200px 600px at 20% -10%, rgba(212,175,55,0.18), transparent 60%),
+      radial-gradient(900px 500px at 100% 110%, rgba(142,107,30,0.22), transparent 60%),
+      linear-gradient(180deg, var(--bg-1), var(--bg-2));
+    color:var(--ink);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:48px 24px;
+  }
+  .wrap{max-width:1100px;width:100%}
+  header{
+    text-align:center;
+    margin-bottom:48px;
+  }
+  .eyebrow{
+    font-size:12px;
+    letter-spacing:0.4em;
+    text-transform:uppercase;
+    color:var(--gold-2);
+    margin-bottom:14px;
+  }
+  h1{
+    font-size:clamp(36px, 6vw, 64px);
+    line-height:1.05;
+    background: linear-gradient(180deg, var(--gold-1) 0%, var(--gold-2) 45%, var(--gold-4) 100%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    font-weight:800;
+    letter-spacing:-0.02em;
+    margin-bottom:14px;
+  }
+  .sub{
+    color:#cbb985;
+    font-size:clamp(14px,1.4vw,18px);
+    max-width:680px;
+    margin:0 auto;
+  }
+  .grid{
+    display:grid;
+    gap:20px;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+  }
+  a.card{
+    display:block;
+    padding:28px 26px;
+    border-radius:18px;
+    background: linear-gradient(180deg, rgba(255,241,191,0.06), rgba(212,175,55,0.04));
+    border:1px solid rgba(212,175,55,0.25);
+    text-decoration:none;
+    color:var(--ink);
+    transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+    position:relative;
+    overflow:hidden;
+  }
+  a.card::before{
+    content:"";
+    position:absolute; inset:0;
+    background: radial-gradient(400px 200px at 0% 0%, rgba(255,241,191,0.10), transparent 60%);
+    opacity:0;
+    transition:opacity .25s ease;
+    pointer-events:none;
+  }
+  a.card:hover{
+    transform: translateY(-3px);
+    border-color: rgba(212,175,55,0.6);
+    box-shadow: 0 12px 40px -12px rgba(212,175,55,0.35);
+  }
+  a.card:hover::before{opacity:1}
+  .tag{
+    display:inline-block;
+    font-size:11px;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    color:var(--gold-2);
+    margin-bottom:10px;
+  }
+  .card h2{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:8px;
+    color:var(--gold-1);
+  }
+  .card p{
+    font-size:14px;
+    line-height:1.5;
+    color:#bda968;
+  }
+  .arrow{
+    margin-top:18px;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:13px;
+    color:var(--gold-2);
+    font-weight:600;
+    letter-spacing:0.05em;
+  }
+  footer{
+    text-align:center;
+    margin-top:56px;
+    color:#7d6a3a;
+    font-size:12px;
+    letter-spacing:0.15em;
+    text-transform:uppercase;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">Copa Intergalo · Sub 16 · 2026</div>
+      <h1>Apresentações Oficiais</h1>
+      <p class="sub">Selecione abaixo a apresentação que deseja visualizar.</p>
+    </header>
+
+    <nav class="grid">
+      <a class="card" href="Copa%20Intergalo%20Sub%2016.html">
+        <span class="tag">Estrutura</span>
+        <h2>Estrutura Expandida 2026</h2>
+        <p>Visão geral completa da Copa Intergalo Sub 16 — formato, calendário e estrutura.</p>
+        <span class="arrow">Abrir apresentação →</span>
+      </a>
+
+      <a class="card" href="Copa%20Intergalo%20Sub%2016%20-%20Convite%20Clubes.html">
+        <span class="tag">Convite</span>
+        <h2>Convite aos Clubes</h2>
+        <p>Apresentação oficial de convite aos clubes participantes da edição 2026.</p>
+        <span class="arrow">Abrir apresentação →</span>
+      </a>
+
+      <a class="card" href="Copa%20Intergalo%20Sub%2016%20-%20Convite%20Clubes-print.html">
+        <span class="tag">Convite · Print</span>
+        <h2>Convite aos Clubes (Versão Impressão)</h2>
+        <p>Versão otimizada para impressão do convite aos clubes.</p>
+        <span class="arrow">Abrir apresentação →</span>
+      </a>
+
+      <a class="card" href="Copa%20Intergalo%20Sub%2016%20-%20Clubes%20Parceiros.html">
+        <span class="tag">Parceiros</span>
+        <h2>Clubes Parceiros</h2>
+        <p>Apresentação dos clubes parceiros da Copa Intergalo Sub 16.</p>
+        <span class="arrow">Abrir apresentação →</span>
+      </a>
+    </nav>
+
+    <footer>© 2026 · Copa Intergalo Sub 16</footer>
+  </div>
+</body>
+</html>
